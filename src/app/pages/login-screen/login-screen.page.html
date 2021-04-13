@@ -1,0 +1,44 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="ion-no-margin">
+    <ion-img src="assets/images/8.png"></ion-img>
+    <ion-card-title> Login</ion-card-title>
+    <ion-card-content>
+      <div class="wrapform">
+        <ion-item>
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-input type="text" #email required placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <ion-input type="password" #password required placeholder="Password"></ion-input>
+        </ion-item>
+      </div>
+  
+      <div class="password_forgot">
+        <ion-button fill="clear" class="ion-no-padding" [routerLink]="['/forgot-password']" >Forgot password?</ion-button>
+      </div>
+      <div class="sign-btn-wrap">
+        <ion-button fill="solid" shape= "round" class="sign-btn" (click)="onLogin(email, password)">Login</ion-button>
+  
+      </div>
+      <div class="text-tag">
+        <span> sign in with</span>
+      </div>
+  
+      <div class="social-btns">
+        <ion-button fill="clear" class="GoogleBtn ion-no-padding" (click)="onLoginGoogle()">
+          <ion-img src="assets/images/google.png"></ion-img>
+        </ion-button>
+        
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+
+
+</ion-content>

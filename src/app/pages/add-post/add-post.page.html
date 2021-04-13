@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Add</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="ion-no-margin">
+    
+    <ion-card-content>
+      <div class="wrapform">
+        <ion-item>
+          <ion-icon name="text"></ion-icon>
+          <ion-input type="text" [(ngModel)]="post.title" required placeholder="Title"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="text"></ion-icon>
+          <ion-input type="text" required [(ngModel)]="post.details" placeholder="Details"></ion-input>
+        </ion-item>
+      </div>
+  
+      
+      <div class="add-btn-wrap">
+        <ion-button type="submit" fill="solid" shape= "round" class="add-btn" (click)="createPost()">Add</ion-button>
+  
+      </div>
+      
+     
+    </ion-card-content>
+  </ion-card>
+ 
+</ion-content>
